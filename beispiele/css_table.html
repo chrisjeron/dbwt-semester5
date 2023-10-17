@@ -15,15 +15,32 @@
         table {
             border: 2px solid rgb(255, 140, 0, 0.5);
             width: 640px;
+            margin: 0px 75px 0px 75px;
         }
         thead > tr > th, .orange2 {
             background-color: rgb(255, 140, 0, 0.2);
         }
-        li{
+        ol > li{
             margin-bottom: 15px;
         }
-        footer{
-            float: right;
+
+        ul > li {
+            list-style-type: none;
+        }
+
+        ul > li:nth-child(n+2) {
+            border-left: 1px solid rgb(255, 140, 0, 0.5);
+            padding-left: 15px;
+        }
+
+        .elektro{
+            display: inline-block;
+        }
+
+        .center{
+            text-align: center;
+            border-bottom: 2px solid rgb(255, 140, 0, 0.5);
+            padding-bottom: 15px;
         }
 
 
