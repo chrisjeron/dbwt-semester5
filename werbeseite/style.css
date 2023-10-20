@@ -1,0 +1,96 @@
+/*
+=== FARBEN (RGB) ===
+
+FH Aachen Mint: #00B1AC
+Schwarz
+Weiß
+
+ */
+
+@import url('http://fonts.cdnfonts.com/css/verdana');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+}
+
+/*
+NAV BAR
+ */
+
+.nav-wrapper{
+    display: grid;
+    grid-template-columns: repeat(19, 1fr);
+    grid-template-rows: 25px 25px 25px;
+}
+
+.logo{
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+    width: 150px
+}
+
+.nav-list{
+    grid-column: 7 / 15;
+    grid-row: 3 / 4;
+    list-style: none;
+}
+
+.nav-list li{
+    float: left;
+    margin-left: 50px;
+}
+
+
+/*
+MAIN
+ */
+
+.main-wrapper{
+    display: grid;
+    grid-template-columns: repeat(19, 1fr);
+    grid-template-rows: repeat(100, 25px);
+}
+
+.essenonline {
+    grid-column: 7 / 15;
+    grid-row: 3;
+}
+
+.essenonline p{
+    margin-top: 20px;
+}
+
+
+
+.kostlichkeiten{
+    grid-column: 7 / 15;
+    grid-row: 17;
+}
+
+.kostlichkeiten table {
+    margin-top: 20px;
+}
+
+
+
+.emensazahlen{
+    grid-column: 7 / 15;
+    grid-row: 27;
+}
+
+.emensazahlen ul{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.emensazahlen ul li{
+    float: left;
+    margin-right: 30px;
+}
+
+
+
+
