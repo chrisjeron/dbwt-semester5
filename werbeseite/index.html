@@ -6,7 +6,7 @@
 - Jeron, Christoph, 3537624
 -->
 
-<html lang="de">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <title>Ihre E-Mensa</title>
@@ -16,25 +16,25 @@
     <nav class="nav-wrapper">
         <img class="logo" src="logo-fh2.png" alt="Logo der Fachhochschule Aachen">
         <ul class="nav-list">
-            <li>Ankündigung</li>
-            <li>Speisen</li>
-            <li>Zahlen</li>
-            <li>Kontakt</li>
-            <li>Wichtig für uns</li>
+            <li><a href="#ankeronline">Ankündigung</a></li>
+            <li><a href="#ankerkostlich">Speisen</a></li>
+            <li><a href="#ankerzahlen">Zahlen</a></li>
+            <li><a href="#ankerformular">Kontakt</a></li>
+            <li><a href="#ankerwichtig">Wichtig für uns</a></li>
         </ul>
     </nav>
 <hr>
 
     <main class="main-wrapper">
         <div class="essenonline">
-            <h2>Bald gibt es Essen auch online ;)</h2>
+            <h2 id="ankeronline">Bald gibt es Essen auch online ;)</h2>
             <p>
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
             </p>
         </div>
 
         <div class="kostlichkeiten">
-            <h2>Köstlichkeiten, die Sie erwarten</h2>
+            <h2 id="ankerkostlich">Köstlichkeiten, die Sie erwarten</h2>
             <table border="1">
                 <tr>
                     <th></th>
@@ -60,14 +60,50 @@
         </div>
 
         <div class="emensazahlen">
-            <h2>E-Mensa in Zahlen</h2>
+            <h2 id="ankerzahlen">E-Mensa in Zahlen</h2>
             <ul>
                 <li>220 Besuche</li>
                 <li>30 Anmeldungen zum Newsletter</li>
                 <li>2 Speisen</li>
             </ul>
         </div>
+
+        <div class="formular">
+            <h1 id="ankerformular">Interesse geweckt? Wir informieren Sie!</h1>
+            <label class="erstelabels" for="vorname">Ihr Name:</label>
+            <input class="ersteinputs" type="text" id="vorname" name="studentename" placeholder="Vorname" required>
+            <label class="erstelabels" for="absender">Ihre E-Mail:</label>
+            <input class="ersteinputs" name="absender" id="absender" placeholder="E-Mail Adresse" required><br>
+            <label class="erstelabels" for="sprache">Newsletter bitte in:</label>
+            <select name="sprachenauswahl" id="sprache">
+                <option>Deutsch</option>
+                <option>Englisch</option>
+                <option>Spanisch</option>
+            </select> <br>
+            <input type="checkbox" id="datenschutz" name="Datenschutzbestätigung" required>
+            <label id="letzelabel" for="datenschutz">Den Datenschutzbestimmungen stimme ich zu</label>
+            <input type="submit" value="Zum Newsletter anmelden">
+        </div>
+
+        <div class="wichtig">
+            <h2 id="ankerwichtig">Das ist uns wichtig</h2>
+            <ul>
+                <li>Beste frische saisonale Zutaten</li>
+                <li>Ausgewogene abwechslungsreiche Gerichte</li>
+                <li>Sauberkeit</li>
+            </ul>
+        </div>
+
+        <h1 class="abschied">Wir freuen uns auf Ihren Besuch</h1>
     </main>
+<hr>
+    <footer class="footer-wrapper">
+        <ul>
+            <li>(c)E-Mensa GmbH</li>
+            <li>Chris Jeron, Patrick Doehm</li>
+            <li><a href="test.html">Impressum</a></li>
+        </ul>
+    </footer>
 
 
 
