@@ -1,190 +1,132 @@
 /*
-=== FARBEN (RGB) ===
-
 FH Aachen Mint: #00B1AC
 Schwarz
 Weiß
-
- */
-
-@import url('http://fonts.cdnfonts.com/css/verdana');
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Verdana, sans-serif;
+*/
+html * {
+    font-family: sans-serif;
 }
 
-/*
-NAV BAR
- */
-
-.nav-wrapper{
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-    grid-template-rows: 25px 25px 25px;
+h1{
+    text-align: center;
 }
+
+hr{
+    background-color: #00B1AC;
+    height: 2px;
+}
+
+a {
+    color: black
+}
+
+/*Styling der Navigation*/
 
 .logo{
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    width: 150px;
-    margin-left: 50px;
-}
-
-.nav-list{
-    grid-column: 2 / 3;
-    grid-row: 3 / 4;
-    list-style: none;
-}
-
-.nav-list li{
+    height: 4em;
     float: left;
-    margin-left: 50px;
 }
 
 
-/*
-MAIN
- */
-
-.main-wrapper{
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-    grid-template-rows: 150px 350px 250px 150px 250px 200px 50px ;
+.Navigation {
+    list-style-type: none;
+    text-align: center;
+    max-width: 100%
 }
 
-.essenonline {
-    grid-column: 2 / 3;
-    grid-row: 2;
+.LiNav li {
+    display: inline-block;
+    padding-top: 2em;
 }
 
-.essenonline p{
-    margin-top: 20px;
-}
-
-
-
-.kostlichkeiten{
-    grid-column: 2 / 3;
-    grid-row: 3;
-}
-
-.kostlichkeiten table {
-    margin-top: 20px;
-}
-
-
-
-.emensazahlen{
-    grid-column: 2 / 3;
-    grid-row: 4;
-}
-
-.emensazahlen ul{
-    list-style: none;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-}
-
-.emensazahlen ul li{
-    float: left;
-    margin-left: 80px;
+.LiNav li a {
+    text-decoration: none;
     font-weight: bold;
+    padding: 10px;
+    border: 2px solid darkcyan;
+    border-radius: 8px;
+    background-color: white
+}
+
+li a:hover {
+    background-color: lightgray;
 }
 
 
-.formular{
-    grid-column: 2 / 3;
-    grid-row: 5;
+/*Styling Ankündigung*/
+p {
+    border: 2px solid black;
+    margin-right: 20%;
+    margin-left: 20%;
+    padding: 1em;
+    border-radius: 8px;
 }
 
-.wichtig{
-    grid-column: 2 / 3;
-    grid-row: 6;
+/*Styling Tabelle*/
+.tabelle {
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.wichtig ul{
-    margin-top: 40px;
-}
-.wichtig ul li{
-    display: flex;
-    justify-content: center;
-    list-style: circle;
+.tabelle img {
+    width: 200px;
 }
 
-.abschied {
-    grid-column: 2 / 3;
-    grid-row: 7;
-    display: flex;
-    justify-content: center;
+table, th, td {
+    border: 1px solid black;
 }
 
-.erstelabels{
-    width: 160px;
-    float: left;
-    margin-right: 160px;
+/*Styling Zahlen*/
+.Zahlen {
+    text-align: center;
+    padding: 1em;
 }
 
-.ersteinputs{
-    width: 160px;
-    margin-right: 155px;
-}
-
-select{
-    margin-bottom: 10px;
-}
-
-#letzelabel{
-    margin-right: 220px;
+.Zahlen li {
+    padding: .5em;
+    font-size: 25px;
+    display: inline-block;
 }
 
 
-
-/*
-FOOTER
- */
-
-.footer-wrapper{
-    grid-template-columns: 30% 40% 30%;
-    grid-template-rows: 100px;
+/*Styling <form> */
+form {
+    text-align: center;
 }
 
-.footer-wrapper ul {
+
+label {
+    padding: 1em;
+}
+
+/*Styling Das ist uns wichtig*/
+.unswichtig{
+    text-align: center;
+    padding: 1em;
+}
+
+.unswichtig li {
+    padding: 0.6em;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
     list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
 }
 
-.footer-wrapper ul li{
-    padding-right: 15px;
+
+/*Styling Footer*/
+.FooterNav{
+    list-style-type: none;
+    text-align: center;
 }
 
-.footer-wrapper ul li:nth-child(n+2){
+.FooterNav li:nth-child(n+2){
     border-left: 1px solid black;
     padding-left: 15px;
 }
 
-
-/*
-LINKS
- */
-
-a:link{
-    color: black;
+.FooterNav li {
+    display: inline-block;
+    padding-right: 15px;
 }
-
-a:visited{
-    color: black;
-}
-
-a:hover {
-    color: #00B1AC;
-}
-
-
 
