@@ -63,7 +63,11 @@ p {
 }
 
 /*Styling Tabelle*/
-.tabelle {
+.allergenemittig{
+    text-align: center;
+}
+
+table {
     margin-right: auto;
     margin-left: auto;
 }
@@ -129,4 +133,3 @@ label {
     display: inline-block;
     padding-right: 15px;
 }
-

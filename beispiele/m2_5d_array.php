@@ -19,7 +19,7 @@ $famousMeals = [
 //Ausgabe des Arrays sortiert
 
 echo "<ol>";
-foreach($famousMeals as $schluessel => $inner){
+foreach($famousMeals as $key => $inner){
     echo  "<li> $inner[name] <br>";
 
     if(is_int($inner['winner'])) {

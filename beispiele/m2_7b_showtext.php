@@ -7,6 +7,12 @@
 </form>
 
 <?php
+/**
+ * Praktikum DBWT. Autoren:
+ * Doehm, Patrick, 3532447
+ * Jeron, Christoph, 3537624
+ */
+
 $file = fopen('en.txt',"r" );
 
 if (isset($_GET['suche'])) {
@@ -16,10 +22,10 @@ if (isset($_GET['suche'])) {
     while(!feof($file)) {
         $line = fgets($file);
 
-        $linedata = explode(';', $line);
+        $zeile = explode(';', $line);
 
-        if ($linedata[0] == $suchwort ) {
-            $uebersetzung = $linedata[1];
+        if ($zeile[0] == $suchwort ) {
+            $uebersetzung = $zeile[1];
             break; //
         }
     }
